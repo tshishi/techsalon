@@ -1,0 +1,7 @@
+<h1>勉強会情報を編集する</h1>
+<%= form_tag update_event_path(@event.id), method: 'patch' do %>
+<%= text_field_tag :tite, @event.title, class: "form-control title-field" %>
+<%= text_area_tag :content, @event.content, class: "form-control content-field" %>
+<%= text_field_tag :place, @event.place, class: "form-control title-field" %>
+<%= submit_tag "保存", class: "btn primary-btn" %>
+<% end %>

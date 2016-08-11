@@ -1,0 +1,8 @@
+<h2>タイトル</h2>
+<p><%= @event.title %></p>
+<h2>内容</h2>
+<p><%= @event.content %></p>
+<h2>会場</h2>
+<p><%= @event.place %></p>
+
+<%= link_to '編集', edit_event_path(@event.id), class: 'btn edit-btn' %>

@@ -1,0 +1,12 @@
+<h1>勉強会の一覧</h1>
+<ul class="events">
+  <% @events.each do |event| %>
+    <li>
+      <p>タイトル</p>
+      <span class="content">
+        <%= link_to event.title, event_path(event.id) %>
+      </span>
+    </li>
+  <% end %>
+
+</ul>
